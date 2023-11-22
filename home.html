@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica&family=Ubuntu&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-Comox Valley Art Gallery-Homepage</title>
@@ -9,11 +13,13 @@
 
 <body>
     <header>
-        <nav>
-        <a href="home.html"><img class="logo-1a" src="images/full-logo.jpg" alt="full orange logo"></a>
+    <nav>
+        <a class="logo-nav" href="home.html"><img src="images/full-logo.jpg" alt="full orange logo"></a>
         
-        <a class="toggle" onclick="showNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        < id="nav-items">
+        <div class="toggle-nav">
+            <a class="toggle" onclick="showNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <ul id="nav-items">
+            
           <li>
             <a href="home.html">Home</a>
           </li>
@@ -31,37 +37,33 @@
           </li>
         <li><a href="https://instagram.com/comoxvalleyartgallery/"><img class="icons" src="images/insta.png" alt="insta icon"></a>
         </li>
-            <li><a href="https://vimeo.com/cvag"><img href="images/vimeo.png" alt="vim icon"></a>
-            </li>
-      </nav>
-      <script>
-        function showNav() {
-          var element = document.getElementById("nav-items");
-          element.classList.toggle("show-items");
-        }
-      </script>
+    </ul>
 
-<div class="socialmedia-icons-links">
-    <a href="https://facebook.com/comoxvalleyartgallery"><img class="icons" src="images/facebook.png" alt="fb icon"></a>
-    <a href="https://instagram.com/comoxvalleyartgallery/"><img class="icons" src="images/insta.png" alt="insta icon"></a>
-    <a href="https://vimeo.com/cvag"><img href="images/vimeo.png" alt="vim icon"></a>
-</div>
+        </div>
+        <script>
+            function showNav() {
+              var element = document.getElementById("nav-items");
+              element.classList.toggle("show-items");
+            }
+          </script>
+    </nav>
 </header>
 
 <!--Call to Action-->
-<section>
-<h1> Opening Tonight</h1>
+<section id="calltoaction">
+<h1> The Comox Valley Art Gallery</h1>
+<h2>Opening Events:</h2>
 <article class="opening">
-    <a href="https://comoxvalleyartgallery.com/exhibitions/lindsay-celeste-inheritance-magic-for-realists/"><img src="images/inhereitance-2.jpg" alt="display img"></a>
-    <h2> Inheritance - Magic For Realists </h2>
+    <a href="https://comoxvalleyartgallery.com/exhibitions/lindsay-celeste-inheritance-magic-for-realists/"><img class="inherit" src="images/inhereitance-2.jpg" alt="display img"></a>
+    <h3> Inheritance - Magic For Realists </h3>
 <p>Doors open at 6pm, Hospitality and preview will begin at 6:30PM, with a welcoming and artist talk by Lindsay to follow at 7PM.</p>
 <h4> FREE ADMISSION! EVERYONE WELCOME!</h4>
 <p class="signature">-The CVAG Team</p>
 </article>
 
 <article class="consent">
-<h2>Consent - Mobile Public Video Program</h2>
-<img src="images/consent.jpg" alt="consent banner">
+<h3>Consent - Mobile Public Video Program</h3>
+<img class="consent-img" src="images/consent.jpg" alt="consent banner">
 <h2>A CURATED VIDEO PROGRAM OF THEMATICALLY ENGAGED ARTIST PROJECTS</h2>
 <p>The Consent video program emerged in association with Possibility Seeds national campaign for Consent Awareness. Consent is an on-going conversation — one that is empowered through intersectional discourse, vulnerability and respect for each other. The pieces displayed in this video program represent fragments of what it means to give, receive, acknowledge, and examine consent through various modes and mediums. The video program will continue to be updated throughout the convergent program as artists continue to engage with this important topic and participate in the continuing conversation.</p>
 

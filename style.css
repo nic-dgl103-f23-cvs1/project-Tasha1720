@@ -1,0 +1,178 @@
+/*NAV*/
+html{
+    font-size:61.2%;
+}
+body{
+    width:61.1rem;
+    margin:1.2rem;
+}
+header {
+
+    display: flex;
+    justify-content:space-between; 
+  }
+  
+  nav {
+    padding-top: 30px;
+    text-align: right;
+    display:flex;
+    justify-content:space-between;
+  }
+  
+  .toggle{
+    padding:2rem,2rem,3rem,4rem;
+    width:2.4rem;
+    gap:50%
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+  li {
+    padding: 8px;
+    font-family:'geologica' ubuntu;
+    font-size:20px;
+    text-align:center;
+    
+  }
+  
+  a {
+    color: black;
+  }
+  
+  .show-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .icons{
+    width:2.4rem
+  }
+
+  /*Call To Action*/
+
+  h1{
+    font-family:'geologica', ubuntu;
+    font-size:38px;
+    text-align:center;
+  }
+
+  h2{
+    font-family:'geologica', ubuntu;
+    font-size:32px;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  h3{
+    font-family:'ubuntu', sans-serif;
+    font-size:28px;
+    text-transform: uppercase;
+    color:#ff6900;
+  }
+
+  h4{
+    font-family:'geologica', ubuntu;
+    font-size:24px;
+    color:#ff6900;
+  }
+
+  p{
+    font-family:'geologica', Arial;
+    font-size:20px;
+    color:black;
+    text-align:center;
+  }
+
+  #calltoaction{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:60rem;
+    margin:50px,40px;
+    background:rgb(238,238,238);
+  }
+
+  .opening{
+    border:2px,grey,solid;
+    box-shadow:
+    inset 0 -3em 3em rgb(169,184,195),
+    0 0 0 2px #ff6900,
+    0.3em 0.3em 1em darkslategrey;
+    padding-top:35px;
+    padding-bottom:10px;
+  }
+
+  .inherit{
+    width:40rem;
+    border:2px white solid;
+    padding:10px,40px,20px,40px;
+  }
+
+  
+  .consent{
+    border:2px,grey,solid;
+    box-shadow:
+    inset 0 -3em 3em rgb(169,184,195),
+    0 0 0 2px #ff6900,
+    0.3em 0.3em 1em darkslategrey;
+    padding-top:35px;
+    padding-bottom:10px;
+  }
+
+  .consent-img{
+    width:40rem;
+    border:2px white solid;
+    padding:10px,40px,20px,40px;
+  }
+
+  .art-call{
+    border:2px,grey,solid;
+    box-shadow:
+    inset 0 -3em 3em rgb(169,184,195),
+    0 0 0 2px #ff6900,
+    0.3em 0.3em 1em darkslategrey;
+    padding-top:35px;
+    padding-bottom:10px;
+  }
+
+  .call-img{
+    width:40rem;
+    border:2px white solid;
+    padding:10px,40px,20px,40px;
+  }
+
+  /*START OF MEDIA QUIERIES*/
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    header {
+      align-items: center;
+    }
+  
+    nav {
+      padding:1.5rem;
+      display:flex;
+      align-content: center;
+    }
+  
+    .toggle {
+      display: none;
+    }
+  
+    #nav-items {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      align-content:center;
+      justify-content: center;
+    }
+  }
+  
+  a{
+    color:black;
+  }
