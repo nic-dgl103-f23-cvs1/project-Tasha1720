@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-Comox Valley Art Gallery-Homepage</title>
@@ -8,16 +9,39 @@
 
 <body>
     <header>
-        <a href="home.html"><img class="logo-1" src="images/full-logo.jpg" alt="full orange logo"></a>
-
-        <nav class="header-nav">
+        <nav>
+        <a href="home.html"><img class="logo-1a" src="images/full-logo.jpg" alt="full orange logo"></a>
+        
+        <a class="toggle" onclick="showNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        < id="nav-items">
+          <li>
             <a href="home.html">Home</a>
+          </li>
+          <li>
             <a href="About.html">About</a>
+          </li>
+          <li>
             <a href="Exhibitions.html">Exhibitions</a>
+          </li>
+          <li>
             <a href="Community.html">Community Events</a>
-        </nav>
+          </li>
+          <li>
+            <a href="https://facebook.com/comoxvalleyartgallery"><img class="icons" src="images/facebook.png" alt="fb icon"></a>
+          </li>
+        <li><a href="https://instagram.com/comoxvalleyartgallery/"><img class="icons" src="images/insta.png" alt="insta icon"></a>
+        </li>
+            <li><a href="https://vimeo.com/cvag"><img href="images/vimeo.png" alt="vim icon"></a>
+            </li>
+      </nav>
+      <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
 
-<div class="s-media">
+<div class="socialmedia-icons-links">
     <a href="https://facebook.com/comoxvalleyartgallery"><img class="icons" src="images/facebook.png" alt="fb icon"></a>
     <a href="https://instagram.com/comoxvalleyartgallery/"><img class="icons" src="images/insta.png" alt="insta icon"></a>
     <a href="https://vimeo.com/cvag"><img href="images/vimeo.png" alt="vim icon"></a>
@@ -67,14 +91,13 @@
 
 <footer>
 <div class="end-nav">
-    <div class="end-nav-one">
         <ul>
-            <li>250.338.6211</li>
-            <li>gallery@comoxvalleyartgallery.com</li>
-            <li>Gallery open Wednesday to Saturday 10 - 5<li>
-            <li>Shop open Wednesday to Saturday 10 - 5<li>
-            <li>580 Duncan Avenue, Courtenay BC V9N 2M7</li>
-        </ul>
+            <li><img src="images/phone-blue.svg" alt="phone icon"> 250.338.6211</li>
+            <li><img src="images/mail-blue.svg" alt="icon">gallery@comoxvalleyartgallery.com</li>
+            <li><img src="images/map-pin-blue.svg" alt="icon">Gallery open Wednesday to Saturday 10 - 5</li>
+            <li><img src="images/map-pin-blue.svg" alt="icon">Shop open Wednesday to Saturday 10 - 5</li>
+            <li><img src="images/map-pin-blue.svg" alt="icon">580 Duncan Avenue, Courtenay BC V9N 2M7</li>
+            </ul>
     </div>
 <div class="end-nav-two">
     CVAG E-news 
