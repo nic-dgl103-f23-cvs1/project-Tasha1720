@@ -5,6 +5,7 @@ html{
 body{
     width:61.1rem;
     margin:1.2rem;
+    background:rgb(238.238,238);
 }
 header {
 
@@ -25,14 +26,14 @@ header {
     gap:50%
   }
 
-  ul {
+  #nav-items {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: none;
   }
   
-  li {
+  .item {
     padding: 8px;
     font-family:'geologica' ubuntu;
     font-size:20px;
@@ -83,10 +84,15 @@ header {
   }
 
   p{
-    font-family:'geologica', Arial;
+    font-family:'geologica', sans-serif;
     font-size:20px;
     color:black;
     text-align:center;
+  }
+
+  .notice{
+    font-family:'ubuntu';
+    font-size:18px;
   }
 
   #calltoaction{
@@ -95,17 +101,17 @@ header {
     justify-content:center;
     width:60rem;
     margin:50px,40px;
-    background:rgb(238,238,238);
+    background:rgb(169,184,195);
+    border:2px, solid, #fcb900;
   }
 
   .opening{
-    border:2px,grey,solid;
-    box-shadow:
-    inset 0 -3em 3em rgb(169,184,195),
-    0 0 0 2px #ff6900,
-    0.3em 0.3em 1em darkslategrey;
+    box-shadow: 10px 10px 5px darkslategrey;
     padding-top:35px;
     padding-bottom:10px;
+    display:flex;
+    flex-direction:column;
+justify-content:center;
   }
 
   .inherit{
@@ -117,12 +123,12 @@ header {
   
   .consent{
     border:2px,grey,solid;
-    box-shadow:
-    inset 0 -3em 3em rgb(169,184,195),
-    0 0 0 2px #ff6900,
-    0.3em 0.3em 1em darkslategrey;
+    box-shadow: 10px 10px 5px darkslategrey;
     padding-top:35px;
     padding-bottom:10px;
+    display:flex;
+    flex-direction:column;
+justify-content:center;
   }
 
   .consent-img{
@@ -133,12 +139,12 @@ header {
 
   .art-call{
     border:2px,grey,solid;
-    box-shadow:
-    inset 0 -3em 3em rgb(169,184,195),
-    0 0 0 2px #ff6900,
-    0.3em 0.3em 1em darkslategrey;
+    box-shadow: 10px 10px 5px lightblue;
     padding-top:35px;
     padding-bottom:10px;
+    display:flex;
+    flex-direction:column;
+justify-content:center;
   }
 
   .call-img{
@@ -146,6 +152,117 @@ header {
     border:2px white solid;
     padding:10px,40px,20px,40px;
   }
+  /*upcoming events*/
+
+  .upcoming-a{
+    display:flex;
+    justify-content:space-around;
+  }
+  .magic{
+    border:2px,grey,solid;
+    margin-top:35px;
+    margin-bottom:10px;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+justify-content:center;
+text-align:center;
+  }
+
+  .magic-img{
+    width:12rem;
+    border:2px solid white;
+    padding:10px;
+  }
+
+  .film{
+    border:2px,grey,solid;
+    padding-top:35px;
+    padding-bottom:10px;
+    display:flex;
+    flex-direction:column;
+justify-content:center;
+text-align:center;
+  }
+
+  .film-img{
+    width:15rem;
+    border:2px solid white;
+    padding:10px;
+  }
+
+  .sub{
+    text-decoration:underline;
+  }
+
+
+  .walk{
+    border:2px,grey,solid;
+    padding-top:35px;
+    padding-bottom:10px;
+    display:flex;
+    flex-direction:column;
+justify-content:center;
+align-content: center;
+
+  }
+  .walk-with{
+    width:30rem;
+    border:2px white solid;
+    padding:10px;
+  }
+
+  /*Newsletter*/
+  form {
+    border: 4px solid #f1f1f1;
+  }
+
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+
+  input[type=submit] {
+    background-color: darkslategrey;
+    color: white;
+    border: none;
+  }
+
+/*End Nav*/
+
+.end-nav{
+        margin-top:35px;
+        padding:15px;
+        display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+      }
+
+.end-list{
+list-style-type:none;
+border:2px solid #fcb900;
+font-size:20px;
+color:darkslateblue;
+text-align:center;
+}
+
+.acknowledge{
+    text-align:center;
+}
+
 
   /*START OF MEDIA QUIERIES*/
   /* Medium devices (landscape tablets, 768px and up) */
@@ -175,4 +292,80 @@ header {
   
   a{
     color:black;
+  }
+
+  /*For large devices and desktops*/
+  @media only screen and (min-width: 992px) {
+ 
+    header {
+        align-items: center;
+      }
+    
+      body{
+        width:auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+      }
+    
+      nav {
+        padding:1.5rem;
+        display:flex;
+        align-content: center;
+      }
+    
+      .toggle {
+        display: none;
+      }
+    
+      #nav-items {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-content:center;
+        justify-content: center;
+      }
+
+    #calltoaction{
+        width:auto;
+        display:flex;
+        justify-content:center;
+    }
+    
+
+    a{
+      color:black;
+    }
+
+
+    .inherit{
+        width:85rem;
+    }
+
+    .consent-img{
+        width:80rem;
+    }
+
+    .call-img{
+        width:80rem;
+    }
+
+    .upcoming-a{
+        flex-direction:column;
+    }
+
+    .magic-img{
+        width:80rem;
+        padding:20px
+    }
+
+    .film-img{
+        width:80rem;
+        padding:20px;
+    }
+
+    .walk-with{
+        width:80rem;
+        padding:20px;
+    }
   }
