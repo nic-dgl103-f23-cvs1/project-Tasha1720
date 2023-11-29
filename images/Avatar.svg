@@ -1,0 +1,13 @@
+<svg id="Avatar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132.994" height="123" viewBox="0 0 132.994 123">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Mask" cx="66.497" cy="61.5" rx="66.497" ry="61.5" fill="#f2f5f7"/>
+    </clipPath>
+  </defs>
+  <ellipse id="Mask-2" data-name="Mask" cx="66.497" cy="61.5" rx="66.497" ry="61.5" fill="#f2f5f7"/>
+  <g id="Avatar-2" data-name="Avatar" clip-path="url(#clip-path)">
+    <g id="Avatar-3" data-name="Avatar" transform="translate(24.181 27.156)">
+      <path id="Combined_Shape" data-name="Combined Shape" d="M19.863,20.929a12.923,12.923,0,0,1-9.5-12.143l4.881.66A12.049,12.049,0,0,1,12.954,2.4l6.909.934V0L58.286,5.364a8.211,8.211,0,0,1,7.347,7.9v14.1a6.505,6.505,0,0,1,5.182,6.188,6.505,6.505,0,0,1-5.182,6.188v2.6H65.6A21.014,21.014,0,0,1,54.407,59.35V63.1h7.772a8.394,8.394,0,0,1,8.61,7.363C79.112,71.607,85.5,78.244,85.5,86.26v21.565H0V86.26c0-8.294,6.835-15.112,15.58-15.9a8.4,8.4,0,0,1,8.6-7.264h6.909V59.35A21.014,21.014,0,0,1,19.9,42.331h-.036v-2.4a6.664,6.664,0,0,1-6.909-6.39,6.664,6.664,0,0,1,6.909-6.39Z" transform="translate(0)" fill="#c2d1d9"/>
+    </g>
+  </g>
+</svg>
