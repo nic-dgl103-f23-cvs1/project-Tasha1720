@@ -215,7 +215,7 @@ align-content: center;
 
   /*Newsletter*/
   form {
-    border: 4px solid #f1f1f1;
+    border: 4px solid #fcb900;
   }
 
   input[type=text], input[type=submit] {
@@ -223,7 +223,7 @@ align-content: center;
     padding: 12px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #ff6900;
     box-sizing: border-box;
   }
 
@@ -237,27 +237,27 @@ align-content: center;
   }
 
   input[type=submit] {
-    background-color: darkslategrey;
+    background-color:#ff6900;
     color: white;
     border: none;
   }
 
 /*End Nav*/
 
-.end-nav{
+.full-footer{
         margin-top:35px;
         padding:15px;
         display:flex;
     justify-content:space-around;
-    flex-direction:row;
+    border:2px solid #fcb900;
+    flex-direction:column;
       }
+
 
 .end-list{
 list-style-type:none;
-border:2px solid #fcb900;
 font-size:20px;
 color:darkslateblue;
-text-align:center;
 }
 
 .acknowledge{
@@ -277,9 +277,15 @@ text-align:center;
   justify-content:center;
 }
 
+table, tr, th{
+  gap:20px;
+  border:1px solid #fcb900;
+}
+
 .upcoming{
   text-align: center;
   margin-top:20px;
+  margin-bottom:40px;
 }
 
 .button{
@@ -287,11 +293,20 @@ text-align:center;
   background:#ff6900;
   padding:10px;
   margin-top:50px;
+  margin-bottom:40px;
   font-size:18px;
   font-style:'geologica', ubuntu;
 }
 
+.sign-up{
+  width:50%;
+  margin:60px 120px 30px;
+}
 
+.copywrite{
+  text-align:center;
+  padding:100px;
+}
 
   /*START OF MEDIA QUIERIES*/
 
@@ -322,9 +337,12 @@ text-align:center;
       #nav-items {
         display: flex;
         flex-direction: row;
-        gap: 40px;
         align-content:center;
         justify-content: center;
+      }
+
+      .item-one{
+padding:210px 40px 210px 200px; 
       }
 
     #welcome{
@@ -390,5 +408,23 @@ text-align:center;
       font-size:22px;
       margin-left:200px;
       margin-right:200px;
+    }
+
+    .sign-up{
+      width:40%;
+      margin:100px 445px;
+    }
+
+    .full-footer{
+      flex-direction:row;
+    }
+    
+    .end-list{
+      width:50%;
+      border-right:2px solid #fcb900;
+    }
+
+    .acknowledge{
+      width:80%;
     }
   }
