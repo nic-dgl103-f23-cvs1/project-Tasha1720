@@ -3,7 +3,7 @@ html{
     font-size:61.2%;
 }
 body{
-    width:61.1rem;
+    width:500px;
     margin:1.2rem;
     background:rgb(238.238,238);
 }
@@ -18,11 +18,13 @@ header {
     text-align: right;
     display:flex;
     justify-content:space-between;
+    width:50rem;
+
   }
   
   .toggle{
-    padding:2rem,2rem,3rem,4rem;
-    width:2.4rem;
+    margin:2rem,2rem,3rem,4rem;
+    width:24px;
     gap:50%
   }
 
@@ -65,27 +67,27 @@ header {
 
   h2{
     font-family:'geologica', ubuntu;
-    font-size:32px;
+    font-size:26px;
     text-decoration: underline;
     text-transform: uppercase;
   }
 
   h3{
     font-family:'ubuntu', sans-serif;
-    font-size:28px;
+    font-size:22px;
     text-transform: uppercase;
     color:#ff6900;
   }
 
   h4{
     font-family:'geologica', ubuntu;
-    font-size:24px;
+    font-size:20px;
     color:#ff6900;
   }
 
   p{
     font-family:'geologica', sans-serif;
-    font-size:20px;
+    font-size:18px;
     color:black;
     text-align:center;
   }
@@ -95,14 +97,13 @@ header {
     font-size:18px;
   }
 
-  #calltoaction{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+  #welcome{
     width:60rem;
-    margin:50px,40px;
+    margin:auto;
     background:rgb(169,184,195);
     border:2px, solid, #fcb900;
+    text-align:center
+
   }
 
   .opening{
@@ -264,35 +265,21 @@ text-align:center;
 }
 
 
+  /*Exhibitions*/
+
+  .current{
+    text-align:center;
+  }
+
+.showings{
+  border:2px solid #fcb900;
+  display:flex;
+  justify-content:center;
+}
+
+
+
   /*START OF MEDIA QUIERIES*/
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    header {
-      align-items: center;
-    }
-  
-    nav {
-      padding:1.5rem;
-      display:flex;
-      align-content: center;
-    }
-  
-    .toggle {
-      display: none;
-    }
-  
-    #nav-items {
-      display: flex;
-      flex-direction: row;
-      gap: 40px;
-      align-content:center;
-      justify-content: center;
-    }
-  }
-  
-  a{
-    color:black;
-  }
 
   /*For large devices and desktops*/
   @media only screen and (min-width: 992px) {
@@ -326,12 +313,25 @@ text-align:center;
         justify-content: center;
       }
 
-    #calltoaction{
+    #welcome{
         width:auto;
-        display:flex;
-        justify-content:center;
     }
     
+    h2{
+      font-size:34px;
+    }
+
+    h3{
+      font-size:30px;
+    }
+
+    h4{
+      font-size:28px;
+    }
+
+    p{
+      font-size:22px;
+    }
 
     a{
       color:black;
