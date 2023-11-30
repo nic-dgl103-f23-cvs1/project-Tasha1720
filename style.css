@@ -563,6 +563,11 @@ th{
     margin: 80px 20px;
   }
 
+  .end-list:hover{
+    color:black;
+    transition:0.7s;
+  }
+
   .acknowledge {
     width: 40%;
     margin: 20px 100px;
