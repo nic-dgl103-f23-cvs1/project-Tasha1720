@@ -525,9 +525,14 @@ transition: 1s ease;
 }
 
 .film-table{
-  margin:25px 300px;
-  font-size:20px;
-  padding:10px;
+  font-size: 22px;
+  margin:20px 250px;
+  width:500px;
+}
+
+.film-table:hover{
+  color:#fcb900;
+  background:grey;
 }
 
 th{
@@ -544,6 +549,12 @@ th{
     font-size: 22px;
     margin-left: 200px;
     margin-right: 200px;
+    width:500px;
+  }
+
+  .showings:hover{
+    color:#fcb900;
+    background:grey;
   }
 
   .sign-up {
