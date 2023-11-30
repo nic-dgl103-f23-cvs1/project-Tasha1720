@@ -1,171 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geologica&family=Ubuntu&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-Comox Valley Art Gallery-Homepage</title>
     <!--DGL 103 CVS-1 Final Project- Natasha Clark - Homepage-->
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-    <nav>
-      <img class="nav-hide" src="images/comox-valley-art-gallery-header.jpg" alt="building img">
-      <!--image taken from https://ltkaward.com/comox-valley-art-gallery/-->
+      <nav>
+        <img
+          class="nav-hide"
+          src="images/comox-valley-art-gallery-header.jpg"
+          alt="building img"
+        />
+        <!--image taken from https://ltkaward.com/comox-valley-art-gallery/-->
 
-        <a class="logo-nav" href="home.html"><img src="images/full-logo.jpg" alt="full orange logo"></a>
+        <a class="logo-nav" href="home.html"
+          ><img src="images/full-logo.jpg" alt="full orange logo"
+        /></a>
 
-        <h1> The Comox Valley Art Gallery</h1>
-        
+        <h1>The Comox Valley Art Gallery</h1>
+
         <div class="toggle-nav">
-            <a class="toggle" onclick="showNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
-            <ul id="nav-items">
-            
-          <li class="item">
-            <a href="home.html">Home</a>
-          </li>
-          <li class="item">
-            <a href="About.html">About</a>
-          </li>
-          <li class="item">
-            <a href="Exhibitions.html">Exhibitions</a>
-          </li>
-          <li class="item">
-            <a href="Community.html">Community Events</a>
-          </li>
-          <li class="item">
-            <a href="https://facebook.com/comoxvalleyartgallery"><img class="icons" src="images/facebook.png" alt="fb icon"></a>
-          </li>
-        <li class="item"><a href="https://instagram.com/comoxvalleyartgallery/"><img class="icons" src="images/insta.png" alt="insta icon"></a>
-        </li>
-    </ul>
-
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa fa-bars" aria-hidden="true"></i
+          ></a>
+          <ul id="nav-items">
+            <li class="item">
+              <a href="home.html">Home</a>
+            </li>
+            <li class="item">
+              <a href="About.html">About</a>
+            </li>
+            <li class="item">
+              <a href="Exhibitions.html">Exhibitions</a>
+            </li>
+            <li class="item">
+              <a href="Community.html">Community Events</a>
+            </li>
+            <li class="item">
+              <a href="https://facebook.com/comoxvalleyartgallery"
+                ><img class="icons" src="images/facebook.png" alt="fb icon"
+              /></a>
+            </li>
+            <li class="item">
+              <a href="https://instagram.com/comoxvalleyartgallery/"
+                ><img class="icons" src="images/insta.png" alt="insta icon"
+              /></a>
+            </li>
+          </ul>
         </div>
         <script>
-            function showNav() {
-              var element = document.getElementById("nav-items");
-              element.classList.toggle("show-items");
-            }
-          </script>
-    </nav>
-</header>
+          function showNav() {
+            var element = document.getElementById("nav-items");
+            element.classList.toggle("show-items");
+          }
+        </script>
+      </nav>
+    </header>
 
-<!--Grand Openings-->
-<section>
-  <div id="welcome">
-<h2>Opening Events:</h2>
-  </div>
-<article class="opening">
-    <a href="https://comoxvalleyartgallery.com/exhibitions/lindsay-celeste-inheritance-magic-for-realists/"><img class="inherit" src="images/inhereitance-2.jpg" alt="display img"></a>
-    <h3> Inheritance - Magic For Realists </h3>
-<p>Doors open at 6pm, Hospitality and preview will begin at 6:30PM, with a welcoming and artist talk by Lindsay to follow at 7PM.</p>
-<h4> FREE ADMISSION! EVERYONE WELCOME!</h4>
-<p class="signature">-The CVAG Team</p>
-</article>
+    <!--Grand Openings-->
+    <section>
+      <div id="welcome">
+        <h2>Opening Events:</h2>
+      </div>
+      <article class="opening">
+        <a
+          href="https://comoxvalleyartgallery.com/exhibitions/lindsay-celeste-inheritance-magic-for-realists/"
+          ><img
+            class="inherit"
+            src="images/inhereitance-2.jpg"
+            alt="display img"
+        /></a>
+        <h3>Inheritance - Magic For Realists</h3>
+        <p>
+          Doors open at 6pm, Hospitality and preview will begin at 6:30PM, with
+          a welcoming and artist talk by Lindsay to follow at 7PM.
+        </p>
+        <h4>FREE ADMISSION! EVERYONE WELCOME!</h4>
+        <p class="signature">-The CVAG Team</p>
+      </article>
 
-<article class="consent">
-<h3>Consent - Mobile Public Video Program</h3>
-<img class="consent-img" src="images/consent.jpg" alt="consent banner">
-<h2>A CURATED VIDEO PROGRAM OF THEMATICALLY ENGAGED ARTIST PROJECTS</h2>
-<p>The Consent video program emerged in association with Possibility Seeds national campaign for Consent Awareness. Consent is an on-going conversation — one that is empowered through intersectional discourse, vulnerability and respect for each other. The pieces displayed in this video program represent fragments of what it means to give, receive, acknowledge, and examine consent through various modes and mediums. The video program will continue to be updated throughout the convergent program as artists continue to engage with this important topic and participate in the continuing conversation.</p>
-</article>
+      <article class="consent">
+        <h3>Consent - Mobile Public Video Program</h3>
+        <img
+          class="consent-img"
+          src="images/consent.jpg"
+          alt="consent banner"
+        />
+        <h2>A CURATED VIDEO PROGRAM OF THEMATICALLY ENGAGED ARTIST PROJECTS</h2>
+        <p>
+          The Consent video program emerged in association with Possibility
+          Seeds national campaign for Consent Awareness. Consent is an on-going
+          conversation — one that is empowered through intersectional discourse,
+          vulnerability and respect for each other. The pieces displayed in this
+          video program represent fragments of what it means to give, receive,
+          acknowledge, and examine consent through various modes and mediums.
+          The video program will continue to be updated throughout the
+          convergent program as artists continue to engage with this important
+          topic and participate in the continuing conversation.
+        </p>
+      </article>
 
-<article class="art-call">
-<img class="call-img" src="images/call-for-art.jpg" alt="call for artists">
-<h3> Calling All Artists</h3>
-<p>The Comox Valley Art Gallery extends an open call for single channel videos in response to the theme of CONSENT. The video program will be displayed in The Comox Valley Art Gallery Window and the Plaza Media Gallery starting on November 18 and will run until January 13. </p>
-<p class="notice">Practising visual and media artists, students, and collaborators are welcome to submit their finished video work or propose a concept for a new video work that can be completed and ready for presentation by November 14, 2023 or December 5, 2023. Click here to learn more.</p>
-</article>
-</section>
+      <article class="art-call">
+        <img
+          class="call-img"
+          src="images/call-for-art.jpg"
+          alt="call for artists"
+        />
+        <h3>Calling All Artists</h3>
+        <p>
+          The Comox Valley Art Gallery extends an open call for single channel
+          videos in response to the theme of CONSENT. The video program will be
+          displayed in The Comox Valley Art Gallery Window and the Plaza Media
+          Gallery starting on November 18 and will run until January 13.
+        </p>
+        <p class="notice">
+          Practising visual and media artists, students, and collaborators are
+          welcome to submit their finished video work or propose a concept for a
+          new video work that can be completed and ready for presentation by
+          November 14, 2023 or December 5, 2023. Click here to learn more.
+        </p>
+      </article>
+    </section>
 
-<!--Upcoming Events-->
-<section class="upcoming-a">
+    <!--Upcoming Events-->
+    <section class="upcoming-a">
+      <div class="film">
+        <h4>Film Screenings 2023</h4>
+        <p>
+          CVAG Film Series - Fall 2023 presents a selection of films from the
+          TIFF Film Circuit
+        </p>
+        <img class="film-img" src="images/film.jpg" alt="film thumbnail" />
 
-<div class="film">
-<h4>Film Screenings 2023</h4>
-<p>CVAG Film Series - Fall 2023 presents a selection of films from the TIFF Film Circuit</p>
-<img class="film-img" src="images/film.jpg" alt="film thumbnail">
+        <table class="film-table">
+          <tr class="sub">
+            <th>Film</th>
+            <th>Screening Date</th>
+          </tr>
+          <tr>
+            <th>The Persian Version</th>
+            <th>November 19 2023 / 5:00 - 6:45pm</th>
+          </tr>
+          <tr>
+            <th>The Eternal Memory</th>
+            <th>November 26 2023 / 5:00 - 6:30pm</th>
+          </tr>
+          <tr>
+            <th>Jules</th>
+            <th>December 3 2023 / 5:00 - 6:30pm</th>
+          </tr>
+          <tr>
+            <th>The Miracle Club</th>
+            <th>December 10 2023 / 5:00 - 6:30pm</th>
+          </tr>
+        </table>
+      </div>
 
-<table class="film-table">
-    <tr class="sub">
-        <th>Film</th>
-        <th>Screening Date</th>
-    </tr>
-    <tr>
-        <th>The Persian Version</th>
-    <th>November 19 2023 / 5:00 - 6:45pm</th>
-    </tr>
-    <tr>
-        <th>The Eternal Memory</th>
-        <th>November 26 2023 / 5:00 - 6:30pm</th>
-    </tr>
-    <tr>
-        <th>Jules</th>
-        <th>December 3 2023 / 5:00 - 6:30pm</th>
-    </tr>
-    <tr>
-        <th>The Miracle Club</th>
-        <th>December 10 2023 / 5:00 - 6:30pm</th>
-    </tr>
-</table>
-</div>
+      <div class="walk">
+        <h4>"Walk With Me" - Story Walk Dates</h4>
+        <img
+          class="walk-with"
+          src="images/walkwithme.jpg"
+          alt="community walk"
+        />
+        <p>
+          We invite you to walk with us as we transform our understanding of,
+          and approach to, the overdose crisis.
+        </p>
+        <ul class="event-ul">
+          <li class="event-li">November 21 2023 / 10:00am - 3:00pm</li>
+          <li class="event-li">December 15 2023 / 1:00 - 3:00pm</li>
+        </ul>
+      </div>
+    </section>
 
-<div class="walk">
-<h4>"Walk With Me" - Story Walk Dates</h4>
-<img class="walk-with" src="images/walkwithme.jpg" alt="community walk">
-<p>We invite you to walk with us as we transform our understanding of, and approach to, the overdose crisis.</p>
-<ul class="event-ul">
-    <li class="event-li">November 21 2023 / 10:00am - 3:00pm</li>
-    <li class="event-li">December 15 2023 / 1:00 - 3:00pm</li>
-</ul>
-</div>
-</section>
-
-<section class="sign-up">
-       <form action="action_page.php">
+    <section class="sign-up">
+      <form action="action_page.php">
         <div class="container">
           <h2>Sign Up For Our Newsletter!</h2>
           <p>CVAG E-News directly to your inbox six times a day</p>
         </div>
-      
-        <div class="container" style="background-color:white">
-          <input type="text" placeholder="Name" name="name" required>
-          <input type="text" placeholder="Email address" name="mail" required>
+
+        <div class="container" style="background-color: white">
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="text" placeholder="Email address" name="mail" required />
           <label>
-            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+            <input type="checkbox" checked="checked" name="subscribe" /> Daily
+            Newsletter
           </label>
         </div>
-      
+
         <div class="container">
-          <input type="submit" value="Subscribe">
+          <input type="submit" value="Subscribe" />
         </div>
       </form>
-</section>
+    </section>
 
-<footer>
-  <div class="full-footer">
-       <ul class="end-list">
-           <li><img src="images/phone-blue.svg" alt="phone icon"> 250.338.6211</li>
-           <li><img src="images/mail-blue.svg" alt="icon">gallery@comoxvalleyartgallery.com</li>
-           <li><img src="images/map-pin-blue.svg" alt="icon">Gallery open Wednesday to Saturday 10 - 5</li>
-           <li><img src="images/map-pin-blue.svg" alt="icon">Shop open Wednesday to Saturday 10 - 5</li>
-           <li><img src="images/map-pin-blue.svg" alt="icon">580 Duncan Avenue, Courtenay BC V9N 2M7</li>
-           </ul>
-   
-  <div class="acknowledge">
-   <h4>Acknowledgements</h4>
-   <p> The Comox Valley Art Gallery is grateful to operate on the Unceded Traditional Territory of the Kómoks First Nations.
-    
-    CVAG is honored to collaborate with artists, writers, guest curators, community partners + volunteers. We are grateful for the support of our members + donors.</p>
-   </div>
-  </div>
+    <footer>
+      <div class="full-footer">
+        <ul class="end-list">
+          <li>
+            <img src="images/phone-blue.svg" alt="phone icon" /> 250.338.6211
+          </li>
+          <li>
+            <img
+              src="images/mail-blue.svg"
+              alt="icon"
+            />gallery@comoxvalleyartgallery.com
+          </li>
+          <li>
+            <img src="images/map-pin-blue.svg" alt="icon" />Gallery open
+            Wednesday to Saturday 10 - 5
+          </li>
+          <li>
+            <img src="images/map-pin-blue.svg" alt="icon" />Shop open Wednesday
+            to Saturday 10 - 5
+          </li>
+          <li>
+            <img src="images/map-pin-blue.svg" alt="icon" />580 Duncan Avenue,
+            Courtenay BC V9N 2M7
+          </li>
+        </ul>
 
-   <div class="copywrite">This is a practice website created by student 0177957 for North Island College DGL 103 and is a recreation of The Comox Valley Art Gallery official website (1997 - 2023 Comox Valley Art Gallery <a href="https://comoxvalleyartgallery.com"> www.comoxvalleyartgallery.com)</a></div>
-  </footer>
-</body>
+        <div class="acknowledge">
+          <h4>Acknowledgements</h4>
+          <p>
+            The Comox Valley Art Gallery is grateful to operate on the Unceded
+            Traditional Territory of the Kómoks First Nations. CVAG is honored
+            to collaborate with artists, writers, guest curators, community
+            partners + volunteers. We are grateful for the support of our
+            members + donors.
+          </p>
+        </div>
+      </div>
+
+      <div class="copywrite">
+        This is a practice website created by student 0177957 for North Island
+        College DGL 103 and is a recreation of The Comox Valley Art Gallery
+        official website (1997 - 2023 Comox Valley Art Gallery
+        <a href="https://comoxvalleyartgallery.com">
+          www.comoxvalleyartgallery.com)</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>

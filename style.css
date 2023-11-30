@@ -112,7 +112,7 @@ header {
     width:auto;
     margin:auto;
     background:rgb(169,184,195);
-    border:2px, solid, #fcb900;
+    border:4px, solid, #fcb900;
     text-align:center;
     padding:20px;
 
@@ -278,6 +278,7 @@ color:darkslateblue;
   .current{
     text-align:center;
     border:2px solid #fcb900;
+    box-shadow: 10px 10px 5px darkslategrey;
   }
 
 .showings{
@@ -304,6 +305,7 @@ table, tr, th{
   margin-bottom:40px;
   font-size:18px;
   font-style:'geologica', ubuntu;
+  box-shadow: 10px 10px 5px darkslategrey;
 }
 
 .sign-up{
@@ -355,6 +357,7 @@ table, tr, th{
     margin-bottom:5px;
     font-size:18px;
     font-style:'geologica', ubuntu;
+    box-shadow: 10px 10px 5px darkslategrey;
   }
 
 
