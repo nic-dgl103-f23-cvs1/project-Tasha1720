@@ -317,17 +317,19 @@ table, tr, th{
 }
 
 /*About Page*/
-.vision, .establish{
-  text-align:center;
+
+.vision-hide{
+  display:none;
 }
 
-.mission, .staff-one{
+.mission, .staff-one, .establish{
   background:white;
   width:400px;
   border: 2px solid #fcb900;
   text-align:center;
   padding:20px;
   margin:25px;
+  box-shadow: 10px 10px 5px darkslategrey;
 }
 
 .card-list{
@@ -508,4 +510,33 @@ table, tr, th{
       text-align:center;
       padding:5px 10px;
     }
+
+    /*About Page*/
+
+.vision-hide{
+  display:block;
+  width:auto;
+  padding:0px 25px;
+}
+
+.mission, .establish{
+width:auto;
+margin:50px 120px;
+}
+
+.staff-one{
+  width:400px;
+  margin:50px 525px;
+}
+
+.additional-info{
+  display:flex;
+  flex-direction:row;
+padding:100px 350px;
+gap:50px;
+}
+
+.button-two{
+  width:200px;
+}
   }
