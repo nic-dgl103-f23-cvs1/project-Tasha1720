@@ -217,6 +217,7 @@ background:#f1f1f1;
   /*Newsletter*/
   form {
     border: 4px solid #fcb900;
+    box-shadow: 10px 10px 5px darkslategrey;
   }
 
   input[type=text], input[type=submit] {
@@ -251,6 +252,7 @@ background:#f1f1f1;
         padding:15px;
     border:4px solid #fcb900;
     flex-direction:column;
+      box-shadow: 10px 10px 5px darkslategrey;
       }
 
       .acknowledge{
@@ -389,11 +391,13 @@ table, tr, th{
         display:show;
         height:22.5rem;
         border:1px solid rgb(238,238,238);
-        grid-column: 2;
+        grid-column-start:2;
+        grid-column-end:3;
       }
     
       .logo-nav{
-        grid-column:1;
+        grid-column-start:1;
+        grid-column-end:2;
       }
 
       .toggle {
@@ -401,13 +405,13 @@ table, tr, th{
       }
     
       #nav-items {
-        display: flex;
-        flex-direction: column;
-        grid-column:3;
+  grid-column-start:3;
+  grid-column-end:4;
+  display:flex;
       }
 
 .item{
-  padding:5px;
+  padding:25px;
   font-size:22px;
 }
 
@@ -437,17 +441,22 @@ table, tr, th{
       color:black;
     }
 
+    .opening, .consent, .art-call{
+      width:80rem;
+      padding:20px;
+      margin:50px auto;
+    }
 
     .inherit{
-        width:85rem;
+        width:78rem;
     }
 
     .consent-img{
-        width:80rem;
+        width:78rem;
     }
 
     .call-img{
-        width:80rem;
+        width:78rem;
     }
 
     .upcoming-a{
@@ -482,15 +491,21 @@ table, tr, th{
     }
 
     .full-footer{
+      display:flex;
       flex-direction:row;
+      height:auto;
     }
     
     .end-list{
-      width:50%;
+      width:40%;
       border-right:2px solid #fcb900;
+      margin:80px 20px;
     }
 
     .acknowledge{
-      width:80%;
+      width:40%;
+      margin:20px 100px;
+      text-align:center;
+      padding:5px 10px;
     }
   }
