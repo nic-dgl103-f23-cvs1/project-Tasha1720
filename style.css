@@ -4,13 +4,13 @@ html{
 }
 body{
     width:500px;
-    margin:1.2rem;
-    background:rgb(238.238,238);
+    background:rgb(238,238,238);
 }
 header {
 
     display: flex;
     justify-content:space-between; 
+    background:#fcb900;
   }
   
   nav {
@@ -20,6 +20,10 @@ header {
     justify-content:space-between;
     width:50rem;
 
+  }
+
+  .nav-hide{
+    display:none;
   }
   
   .toggle{
@@ -84,6 +88,14 @@ header {
     color:#ff6900;
   }
 
+  h5{
+    font-family:'geologica', ubuntu;
+    font-size:16px;
+    color:black;
+    text-transform: capitalize;
+    text-decoration:underline;
+
+  }
   p{
     font-family:'geologica', sans-serif;
     font-size:16px;
@@ -156,8 +168,7 @@ justify-content:center;
   /*upcoming events*/
 
   .upcoming-a{
-    display:flex;
-    justify-content:space-around;
+    margin:auto;
   }
   .magic{
     border:2px,grey,solid;
@@ -238,13 +249,14 @@ align-content: center;
 
   input[type=submit] {
     background-color:#ff6900;
-    color: white;
+    color: black;
     border: none;
   }
 
 /*End Nav*/
 
-.full-footer{
+.full-footer, .acknowledge{
+  background:rgb(169,184,195);
         margin-top:35px;
         padding:15px;
         display:flex;
@@ -260,9 +272,6 @@ font-size:20px;
 color:darkslateblue;
 }
 
-.acknowledge{
-    text-align:center;
-}
 
 
   /*Exhibitions*/
@@ -308,6 +317,48 @@ table, tr, th{
   padding:100px;
 }
 
+/*About Page*/
+.vision, .establish{
+  text-align:center;
+}
+
+.mission, .staff-one{
+  background:white;
+  width:400px;
+  border: 2px solid #fcb900;
+  text-align:center;
+  padding:20px;
+  margin:25px;
+}
+
+.card-list{
+  font-size:18px;
+  padding:5px;
+}
+
+.additional-info{
+  display:flex;
+  flex-direction:column;
+  margin-top:40px;
+  padding-left: 125px;
+  padding-right:125px;
+  text-align:center;
+  border-top:2px solid #fcb900;
+}
+
+.button-two{
+    border: 3px solid black;
+    background:#ff6900;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-size:18px;
+    font-style:'geologica', ubuntu;
+  }
+
+
+
+
   /*START OF MEDIA QUIERIES*/
 
   /*For large devices and desktops*/
@@ -325,25 +376,43 @@ table, tr, th{
       }
     
       nav {
+        width:auto;
         padding:1.5rem;
-        display:flex;
-        align-content: center;
+        display:grid;
+        gap:10px;
+        grid-template-rows:260px;
+        grid-template-columns:260px 500px 260px;
+      }
+
+      .fa-fa-bars{
+        width:24px;
+      }
+
+      .nav-hide{
+        display:show;
+        height:22.5rem;
+        border:1px solid rgb(238,238,238);
+        grid-column: 2;
       }
     
+      .logo-nav{
+        grid-column:1;
+      }
+
       .toggle {
         display: none;
       }
     
       #nav-items {
         display: flex;
-        flex-direction: row;
-        align-content:center;
-        justify-content: center;
+        flex-direction: column;
+        grid-column:3;
       }
 
-      .item-one{
-padding:210px 40px 210px 200px; 
-      }
+.item{
+  padding:5px;
+  font-size:22px;
+}
 
     #welcome{
         width:auto;
