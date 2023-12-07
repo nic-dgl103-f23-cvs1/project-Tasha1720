@@ -7,7 +7,9 @@ body {
   width:auto;
   margin:0%;
   background: rgb(238, 238, 238);
+  font-family:'geologica';
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -72,6 +74,11 @@ a {
   font-size: 38px;
   text-align: center;
   display:none;
+}
+
+h1{ font-family: "geologica", ubuntu;
+  font-size: 26px;
+  text-align: center;
 }
 
 h2 {
@@ -280,11 +287,13 @@ input[type="submit"] {
 
 /*Exhibitions*/
 
-.current {
+.current, .insights, .rent, .public {
   text-align: center;
   border: 2px solid #fcb900;
   box-shadow: 10px 10px 5px darkslategrey;
   margin:50px auto;
+  padding:15px;
+  width:auto;
 }
 
 .showings {
@@ -294,7 +303,8 @@ input[type="submit"] {
 
 table,
 tr,
-th {
+th
+ {
   gap: 20px;
   border: 1px solid #fcb900;
 }
@@ -327,10 +337,16 @@ th {
 
 /*About Page*/
 
+#welcome{
+  width:100%;
+
+}
+
 .vision-hide {
   display: none;
 }
 
+.vision,
 .mission,
 .staff-one,
 .establish {
@@ -352,10 +368,40 @@ th {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  padding-left: 125px;
-  padding-right: 125px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
   border-top: 2px solid #fcb900;
+}
+
+.info-img{
+  width:30rem;
+}
+
+.contain-info{
+  padding:10px;
+}
+.vision-img{
+  width:30rem;
+}
+
+.container-one, .container-two, .container-three, .container-d, .public-art{
+  display:flex;
+  flex-direction:column;
+}
+
+.container-d{
+  padding:15px;
+  text-align:center;
+}
+.contain-info{
+  background: white;
+  width: 32rem;
+  border: 2px solid #fcb900;
+  text-align: center;
+  padding: 20px;
+  margin: 25px;
+  box-shadow: 10px 10px 5px darkslategrey;
 }
 
 .button-two {
@@ -373,13 +419,15 @@ th {
 
 /*For large devices and desktops*/
 @media only screen and (min-width: 992px) {
+
+  /*Header and nav*/
   header {
     align-items: center;
   }
 
   body {
     width: auto;
-    margin:0%;
+    margin:0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -437,12 +485,18 @@ th {
     font-size: 22px;
   }
 
+  /*Sections Css*/
+
+  /*Base*/
+
   #welcome {
     width:auto;
     margin:0%;
   }
+  /*Headings*/
 
   .heading{
+    display:block;
     font-family: "geologica", ubuntu;
     font-size: 38px;
     text-align: center;
@@ -451,6 +505,12 @@ th {
   .heading:hover{
     color:white;
     transition:0.7s;
+  }
+
+  h1{
+      font-family: "geologica", ubuntu;
+      font-size: 28px;
+      text-align: center;
   }
 
   h2 {
@@ -483,16 +543,30 @@ th {
     color: black;
   }
 
+  /*Sections and articles*/
   .opening,
   .consent,
   .art-call {
-    width: 80rem;
     padding: 20px;
-    margin: 50px auto;
+    margin: 15px auto;
+  }
+
+  .opening{
+    height:65rem;
+    width:30rem;
+  }
+
+  .consent{
+    width:60rem;
+  }
+
+  .art-call{
+    height:80rem;
+    width:30rem;
   }
 
   .inherit {
-    width: 78rem;
+    width: 28rem;
     filter:greyscale(100%);
     -webkit-filter: grayscale(100%);
   }
@@ -506,11 +580,11 @@ transition: 1s ease;
   }
 
   .consent-img {
-    width: 78rem;
+    width: 28rem;
   }
 
   .call-img {
-    width: 78rem;
+    width: 28rem;
     filter:greyscale(100%);
     -webkit-filter: grayscale(100%);
   }
@@ -562,17 +636,69 @@ th{
   padding:10px;
 }
 
+td{
+  padding:5px;
+}
+
+.walk{
+  box-shadow:none;
+width:100%;
+height:60rem;
+background: darkgrey;
+margin:30px 0;
+color:wheat;
+}
+
   .walk-with {
-    width: 80rem;
-    padding: 20px;
+    width: 30rem;
+    padding: 80px;
   }
 
+  .contain-info{
+
+  }
+
+  /*Containers*/
+  
+  .container-one, .container-two, .container-three, .container-d, .public-art{
+    display:flex;
+  }
+
+  .container-d{
+    padding:15px;
+    text-align:center;
+    flex-direction:row;
+    justify-content:center;
+  }
+
+
   /*Exhibitions*/
+
+  .current, .upcoming, .insights, .rent, .public {
+    text-align: center;
+    border: 2px solid #fcb900;
+    box-shadow: 10px 10px 5px darkslategrey;
+    margin:50px auto;
+  }
+
+  .container-three{
+    display:flex;
+    flex-direction:row;
+
+  }
+
   .showings {
     font-size: 22px;
     margin-left: 200px;
     margin-right: 200px;
-    width:500px;
+    width:800px;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .upcoming{
+    display:flex;
+    flex-direction:column;
   }
 
   .showings:hover{
@@ -609,6 +735,16 @@ th{
     padding: 5px 10px;
   }
 
+  .public-art{
+    display:flex;
+    flex-direction:row;
+    padding:15px;
+  }
+
+  .rent, .public{
+    margin:15px;
+  }
+
   /*About Page*/
 
   .vision-hide {
@@ -625,27 +761,69 @@ filter: greyscale (100%);
 transition: 1s ease;
   }
 
-
+.vision,
   .mission,
   .establish {
-    width: auto;
-    margin: 50px 120px;
+    width: 30%;
+    margin: 50px 10px;
+    height:auto;
   }
 
+  .vision-img{
+    width:35rem;
+    filter:greyscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+.vision-img:hover{
+  filter: grayscale(0%);
+filter: gray;
+-webkit-filter: grayscale(0%);
+filter: none;
+transition: 1s ease;
+  }
+
+
   .staff-one {
-    width: 400px;
-    margin: 50px 525px;
+    width: auto;
+margin:0;
+    padding:25px;
+    text-align:center;
+  }
+
+  .staff-list{
+    display:flex;
+flex-direction:row;
+justify-content:center;
+  }
+
+  .staff{
+    width:auto;
+    margin:20px 100px;
   }
 
   .additional-info {
-    display: flex;
-    flex-direction: row;
-    padding: 100px 350px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:15px;
     gap: 50px;
+    margin:15px;
+  text-align:center;
   }
+
+  .contain-info{
+    padding:2rem;
+  }
+
+  .info-img{
+    width:30rem;
+  }
+
 
   .button-two {
     width: 200px;
+    margin-top:20px;
   }
 
   .button:hover{
