@@ -43,9 +43,6 @@
               <a href="Exhibitions.html">Exhibitions</a>
             </li>
             <li class="item">
-              <a href="Community.html">Community Events</a>
-            </li>
-            <li class="item">
               <a href="https://facebook.com/comoxvalleyartgallery"
                 ><img class="icons" src="images/facebook.png" alt="fb icon"
               /></a>
@@ -74,6 +71,14 @@
         src="images/outside.jpg"
         alt="building img"
       />
+      <div class="extra-nav-mobile">
+      <a href="home.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Exhibitions.html">Exhibitions</a>
+      </div>
+
+
+
         <h1>CVAG Homepage</h1>
       </div>
         <div class="container-one">
@@ -193,7 +198,7 @@
     </section>
 
     <section class="sign-up">
-      <form action="action_page.php">
+      <form method="post">
         <div class="container">
           <h2>Sign Up For Our Newsletter!</h2>
           <p>CVAG E-News directly to your inbox six times a day</p>
@@ -202,7 +207,7 @@
         <div class="container" style="background-color: white">
           <input type="text" placeholder="Name" name="name" required />
           <input type="text" placeholder="Email address" name="mail" required />
-          <label>
+          <label for="newsletter">
             <input type="checkbox" checked="checked" name="subscribe" /> Daily
             Newsletter
           </label>

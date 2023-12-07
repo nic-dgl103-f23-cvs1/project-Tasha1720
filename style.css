@@ -67,6 +67,15 @@ a {
   width: 2.4rem;
 }
 
+.extra-nav-mobile{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
 /*Call To Action*/
 
 .heading {
@@ -485,6 +494,10 @@ th
     font-size: 22px;
   }
 
+  .extra-nav-mobile{
+    display:none;
+  }
+
   /*Sections Css*/
 
   /*Base*/
@@ -671,7 +684,9 @@ color:wheat;
     justify-content:center;
   }
 
-
+.container-one{
+  flex-direction:row;
+}
   /*Exhibitions*/
 
   .current, .upcoming, .insights, .rent, .public {
