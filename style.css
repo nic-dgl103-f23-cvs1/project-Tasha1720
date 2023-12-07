@@ -1,9 +1,11 @@
+
 /*NAV*/
 html {
   font-size: 61.2%;
 }
 body {
-  width: 500px;
+  width:auto;
+  margin:0%;
   background: rgb(238, 238, 238);
 }
 header {
@@ -20,14 +22,18 @@ nav {
   width: 50rem;
 }
 
-.nav-hide {
+.img-one-hide {
   display: none;
 }
 
 .toggle {
   margin: 2rem, 2rem, 3rem, 4rem;
-  width: 24px;
+  width:auto;
   gap: 50%;
+}
+
+.fa-fa-bars{
+  width:24px;
 }
 
 #nav-items {
@@ -42,6 +48,7 @@ nav {
   font-family: "geologica" ubuntu;
   font-size: 20px;
   text-align: center;
+  width:auto;
 }
 
 a {
@@ -60,10 +67,11 @@ a {
 
 /*Call To Action*/
 
-h1 {
+.heading {
   font-family: "geologica", ubuntu;
   font-size: 38px;
   text-align: center;
+  display:none;
 }
 
 h2 {
@@ -120,10 +128,11 @@ p {
   padding: 10px;
   text-align: center;
   background: #f1f1f1;
+  width:90%;
 }
 
 .inherit {
-  width: 40rem;
+  width: 30rem;
   border: 2px white solid;
   margin: 25px;
 }
@@ -135,12 +144,13 @@ p {
   padding: 10px;
   text-align: center;
   background: #f1f1f1;
+  width:90%;
 }
 
 .consent-img {
-  width: 40rem;
-  border: 2px white solid;
-  margin: 25px;
+  width: 30rem;
+  border: .2rem white solid;
+  margin: 2.5rem;
 }
 
 .art-call {
@@ -150,12 +160,13 @@ p {
   padding: 10px;
   text-align: center;
   background: #f1f1f1;
+  width:90%;
 }
 
 .call-img {
-  width: 40rem;
-  border: 2px white solid;
-  margin: 25px;
+  width: 30rem;
+  border: .2rem white solid;
+  margin: 2.5rem;
 }
 /*upcoming events*/
 
@@ -171,12 +182,13 @@ p {
   padding: 10px;
   text-align: center;
   background: #f1f1f1;
+  width:90%;
 }
 
 .film-img {
-  width: 40rem;
-  border: 2px solid white;
-  margin: 25px;
+  width: 30rem;
+  border: 0.2rem solid white;
+  margin: 2.5rem;
 }
 
 .film-table {
@@ -195,11 +207,12 @@ p {
   padding: 10px;
   text-align: center;
   background: #f1f1f1;
+  width:90%;
 }
 .walk-with {
   width: 30rem;
-  border: 2px white solid;
-  padding: 10px;
+  border: 0.2rem white solid;
+  padding: 1rem;
 }
 
 .event-ul {
@@ -366,6 +379,7 @@ th {
 
   body {
     width: auto;
+    margin:0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -384,9 +398,11 @@ th {
     width: 24px;
   }
 
-  .nav-hide {
-    display: show;
-    height: 22.5rem;
+  .img-one-hide {
+    display: block;
+    height: 60rem;
+    width:100%;
+    margin:0%;
     border: 1px solid rgb(238, 238, 238);
     grid-column-start: 2;
     grid-column-end: 3;
@@ -422,10 +438,17 @@ th {
   }
 
   #welcome {
-    width: auto;
+    width:auto;
+    margin:0%;
   }
 
-  h1:hover{
+  .heading{
+    font-family: "geologica", ubuntu;
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .heading:hover{
     color:white;
     transition:0.7s;
   }

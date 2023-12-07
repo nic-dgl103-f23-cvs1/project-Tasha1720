@@ -21,23 +21,17 @@
   <body>
     <header>
       <nav>
-        <img
-          class="nav-hide"
-          src="images/comox-valley-art-gallery-header.jpg"
-          alt="building img"
-        />
         <!--image taken from https://ltkaward.com/comox-valley-art-gallery/-->
 
         <a class="logo-nav" href="home.html"
           ><img src="images/full-logo.jpg" alt="full orange logo"
         /></a>
 
-        <h1>The Comox Valley Art Gallery</h1>
+        <p class="heading">The Comox Valley Art Gallery</p>
 
+        <!--Not sure why toggle is still not working, went over codepen several times and even tried adjusting widths incase that was the problem. Maybe its the grid that is keeping it from working?-->
         <div class="toggle-nav">
-          <a class="toggle" onclick="showNav()"
-            ><i class="fa fa-bars" aria-hidden="true"></i
-          ></a>
+          <a class="toggle" onclick="showNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
           <ul id="nav-items">
             <li class="item">
               <a href="home.html">Home</a>
@@ -75,8 +69,15 @@
     <!--Grand Openings-->
     <section>
       <div id="welcome">
-        <h2>Opening Events:</h2>
+        <img
+        class="img-one-hide"
+        src="images/comox-valley-art-gallery-header.jpg"
+        alt="building img"
+      />
+        <h1>CVAG Opening Events:</h1>
       </div>
+        <div class="container-one">
+      
       <article class="opening">
         <a
           href="https://comoxvalleyartgallery.com/exhibitions/lindsay-celeste-inheritance-magic-for-realists/"
@@ -115,6 +116,7 @@
         </p>
       </article>
 
+
       <article class="art-call">
         <img
           class="call-img"
@@ -135,10 +137,12 @@
           November 14, 2023 or December 5, 2023. Click here to learn more.
         </p>
       </article>
+    </div>
     </section>
 
     <!--Upcoming Events-->
     <section class="upcoming-a">
+      <div class="container-two">
       <div class="film">
         <h4>Film Screenings 2023</h4>
         <p>
@@ -153,20 +157,20 @@
             <th>Screening Date</th>
           </tr>
           <tr>
-            <th>The Persian Version</th>
-            <th>November 19 2023 / 5:00 - 6:45pm</th>
+            <td>The Persian Version</td>
+            <td>November 19 2023 / 5:00 - 6:45pm</td>
           </tr>
           <tr>
-            <th>The Eternal Memory</th>
-            <th>November 26 2023 / 5:00 - 6:30pm</th>
+            <td>The Eternal Memory</td>
+            <td>November 26 2023 / 5:00 - 6:30pm</td>
           </tr>
           <tr>
-            <th>Jules</th>
-            <th>December 3 2023 / 5:00 - 6:30pm</th>
+            <td>Jules</td>
+            <td>December 3 2023 / 5:00 - 6:30pm</td>
           </tr>
           <tr>
-            <th>The Miracle Club</th>
-            <th>December 10 2023 / 5:00 - 6:30pm</th>
+            <td>The Miracle Club</td>
+            <td>December 10 2023 / 5:00 - 6:30pm</td>
           </tr>
         </table>
       </div>
@@ -187,6 +191,7 @@
           <li class="event-li">December 15 2023 / 1:00 - 3:00pm</li>
         </ul>
       </div>
+    </div>
     </section>
 
     <section class="sign-up">
@@ -204,7 +209,6 @@
             Newsletter
           </label>
         </div>
-
         <div class="container">
           <input type="submit" value="Subscribe" />
         </div>
